@@ -4,10 +4,6 @@ const TodoSchema = new mongoose.Schema({
   todo: {
     type: String,
     required: true,
-  },
-  email: {
-    type: String,
-    required: true,
   }
 });
 
