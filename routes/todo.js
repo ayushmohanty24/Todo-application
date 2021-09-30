@@ -4,7 +4,7 @@ const Todo = require("../models/Todo");
 // routes
 router.post("/add/todo", (req, res) => {
     const { todo } = req.body;
-    const newTodo = new Todo({ todo });
+    const newTodo = new Todo({ todo,email });
 
     // save the todo
     newTodo.save()

@@ -1,17 +1,17 @@
 <%- include("./partials/header")  %>
-<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="/">Todo App</a>
-</nav>
+<%- include("./partials/navbar")%>
 
 <div class="container mt-5">
     <form action="/add/todo" method="POST" class="d-flex">
-        <input type="text" name="todo" class="form-control" placeholder="Enter Todo">
+        <input type="text" name="todo" class="form-control" placeholder="Enter Name"><br>
+        <input type="email" name="email" class="form-control" placeholder="Enter email">
         <input type="submit" value="Add Todo" class="btn btn-md btn-primary mx-2">
     </form>
 
     <ul class="list-group my-5">
         <% todo.forEach(todos => { %>
-        <li class="list-group-item"><%= todos.todo %> <a href="/delete/todo/<%= todos._id %>"
+        <li class="list-group-item"><%= todos.todo %> <%= todos.email %> 
+             <a href="/delete/todo/<%= todos._id %>"
                 class="btn btn-danger btn-sm">Delete</a></li>
         <% }) %>
 
@@ -21,5 +21,5 @@
 
 
 
-
+<%- include("./partials/foo")  %>
 <%- include("./partials/footer")  %>
