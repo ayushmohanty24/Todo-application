@@ -4,6 +4,5 @@
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-  
+![App Screenshot](p1.png)
+![App Screenshot](p2.png)
